@@ -2,9 +2,9 @@
 
 int main()
 {
-    int a, b = 32;
-    a = 56;
-    printf("%d", ggT(a, b));
+    int a = 5610;
+    int b = 637;
+    printf("%d\n\n", ggT(a, b));
 
     return 42;
 }

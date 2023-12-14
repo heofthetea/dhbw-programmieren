@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 
-unsigned long long int factorial(unsigned long long int);
+int factorial(int);
 
 int main()
 {
@@ -11,14 +11,14 @@ int main()
     printf("enter number up to which factorials will be calculated: ");
     scanf("%d", &depth);
     for(int i = 0; i <= depth; i++) {
-        printf("%d factorial = %llu\n", i, factorial(i));
+        printf("%d factorial = %d\n", i, factorial(i));
     }
     return 42;
 }
 
-unsigned long long int factorial(unsigned long long int n) {
+ int factorial(int n) {
     if(n == 0) {
-        return 1LL;
+        return 1;
     }
     return (factorial(n - 1) * n);
 }
